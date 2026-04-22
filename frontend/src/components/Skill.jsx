@@ -13,7 +13,7 @@ function Skill() {
   return (
     <div>
         
-    <div id='skill' className='flex flex-col items-center h-screen w-full  mt-10 pt-10'>
+    <div id='skill' className='flex flex-col items-center h-screen w-full  mt-10 pt-10 '>
         <h1 className='text-5xl font-mono font-bold'>Skills</h1>
         <p className='text-gray-500 font-extralight text-2xl'>Here an overview of my technical expertise and proficiency level</p>
      <div className='gap-20 h-screen w-full flex flex-col items-center mt-10'>  <div className='flex gap-20'>

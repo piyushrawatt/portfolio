@@ -7,7 +7,7 @@ import { FaMedal } from "react-icons/fa6";
 
 function Aboutme() {
   return (
-    <div id='aboutme' className='flex flex-col items-center  bg-[#0F172A] h-fit w-full gap-15 pt-10'>
+    <div id='aboutme' className='flex flex-col items-center  bg-[#0F172A] h-fit w-full gap-15 pt-10 '>
         <h1  className='text-5xl mt-5 font-bold  text-[#38BDF8]'>About Me</h1>
         <div className='flex gap-4 mt-3'>
             <button className='h-[40px] w-[200px] flex border rounded-3xl items-center justify-center bg-blue-900 text-white'><FaArrowsLeftRight />Fresher</button>
