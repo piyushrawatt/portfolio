@@ -1,4 +1,3 @@
-import React from 'react'
 import Hero from './Hero'
 // import Aboutme from './aboutme'
 // import Aboutme from './Aboutme'
