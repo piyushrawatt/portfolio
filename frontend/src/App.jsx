@@ -1,6 +1,6 @@
 
 
-import Main from "./components/Main"
+import Main from "./components/Main.jsx"
 function App() {
      console.log("hello")
 

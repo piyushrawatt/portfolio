@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from './nav'
+import Nav from './Nav.jsx'
 import { CiSaveDown2 } from "react-icons/ci";
 import { FaRegMessage } from "react-icons/fa6";
 import { CiLinkedin } from "react-icons/ci";
