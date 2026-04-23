@@ -10,10 +10,11 @@ import Footer from './Footer'
 function Main() {
   return (
     <div className='overflow-hidden select-none' >
-  
+
   <Hero/>
 <Aboutme/>
 <Skill/>
+  
 <Project/>
 <Footer/>
 

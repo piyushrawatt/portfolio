@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { FaArrowsLeftRight } from "react-icons/fa6";
 import { FaDatabase } from "react-icons/fa";
 import { CiRainbow } from "react-icons/ci";
@@ -7,46 +7,85 @@ import { FaMedal } from "react-icons/fa6";
 
 function Aboutme() {
   return (
-    <div id='aboutme' className='flex flex-col items-center  bg-[#0F172A] h-fit w-full gap-15 pt-10 '>
-        <h1  className='text-5xl mt-5 font-bold  text-[#38BDF8]'>About Me</h1>
-        <div className='flex gap-4 mt-3'>
-            <button className='h-[40px] w-[200px] flex border rounded-3xl items-center justify-center bg-blue-900 text-white'><FaArrowsLeftRight />Fresher</button>
-            <button className='h-[40px] w-[200px] flex border rounded-3xl items-center justify-center bg-green-500 text-white'><FaDatabase />Mern Stack</button>
-            <button className='h-[40px] w-[200px] flex border rounded-3xl items-center justify-center bg-violet-500 text-white'><CiRainbow />UI/UX Design</button> <br /> </div>
-      <div className='flex gap-5  '>   <button className='h-[40px] w-[200px] flex border rounded-3xl items-center justify-center bg-orange-500 text-white'><MdGraphicEq />Version Control</button>
-            <button className='h-[40px] w-[200px] flex border rounded-3xl items-center justify-center  bg-red-500 text-white '><FaMedal  />Best practice</button>
-        </div>   
-          
-        <div className='border h-fit w-[500px] rounded-2xl shadow-2xl bg-[#020617] shadow-blue-950 pb-4 hover:scale-110'>
-            <h1 className='text-3xl ml-4 text-[#38BDF8] font-bold ' >Experince</h1>
-            <ul className='list-disc  text-xl text-[#94A3B8] pl-10 gap-10 space-y-5 '>
-                <li>Learned and implemented HTML, CSS, JavaScript, React</li>
-                <li>Developed backend using Node.js & Express</li>
-                <li>Worked with MongoDB & Mongoose</li>
-                <li>Built authentication systems (Login, Signup, OTP verification)</li>
-                <li>Practiced API integration and error handling</li>
-                <li>Built multiple mini-projects and one major full-stack project</li>
-            </ul>
-            </div>
-          
-           
-         
-            <div className='border h-fit w-[500px] bg-[#020617] rounded-2xl shadow-2xl shadow-blue-950 mb-4 pb-3 hover:scale-105'>
-                <h1 className='text-3xl ml-4  text-[#38BDF8] font-bold'>Education</h1>
-            <ul className='list-disc  text-xl text-[#94A3B8] pl-10 gap-10 space-y-5 m-4'>
-                <h1> Bachelor of  in Computer ApplicationIGNOU University (2025)</h1>
+    <div
+      id="aboutme"
+      className="flex flex-col items-center bg-[#0F172A] w-full gap-10 pt-10 px-4"
+    >
+    
+      <h1 className="text-3xl md:text-5xl font-bold text-[#38BDF8] text-center">
+        About Me
+      </h1>
 
-            
-                </ul>
-                <ul className='list-disc  text-xl text-white pl-10 gap-10 space-y-5 '>
-                    <h1>Certifications & Training</h1>
-                    <li>Full Stack Web Development (MERN Stack) –  Institute</li>
-                    <li>React & Tailwind CSS – Project-based learning</li>
-                    <li>Node.js, Express & MongoDB – Hands-on practice</li>
-                </ul>
-                </div>
+      <div className="flex flex-wrap justify-center gap-3">
+        <button className="flex items-center gap-2 px-4 h-10 md:h-11 md:w-52 bg-blue-900 text-white rounded-3xl">
+          <FaArrowsLeftRight />
+          Fresher
+        </button>
+
+        <button className="flex items-center gap-2 px-4 h-10 md:h-11 md:w-52 bg-green-500 text-white rounded-3xl">
+          <FaDatabase />
+          MERN Stack
+        </button>
+
+        <button className="flex items-center gap-2 px-4 h-10 md:h-11 md:w-52 bg-violet-500 text-white rounded-3xl">
+          <CiRainbow />
+          UI/UX Design
+        </button>
+
+        <button className="flex items-center gap-2 px-4 h-10 md:h-11 md:w-52 bg-orange-500 text-white rounded-3xl">
+          <MdGraphicEq />
+          Version Control
+        </button>
+
+        <button className="flex items-center gap-2 px-4 h-10 md:h-11 md:w-52 bg-red-500 text-white rounded-3xl">
+          <FaMedal />
+          Best Practice
+        </button>
+      </div>
+
+
+      <div className="flex flex-col md:flex-row gap-6 w-full justify-center items-center">
+
+
+        <div className="w-full md:w-[500px] border rounded-2xl shadow-2xl bg-[#020617] shadow-blue-950 p-4 hover:scale-105 transition">
+          <h1 className="text-2xl md:text-3xl text-[#38BDF8] font-bold">
+            Experience
+          </h1>
+
+          <ul className="list-disc text-sm md:text-xl text-[#94A3B8] pl-5 md:pl-10 space-y-3 mt-4">
+            <li>Learned HTML, CSS, JavaScript, React</li>
+            <li>Developed backend using Node.js & Express</li>
+            <li>Worked with MongoDB & Mongoose</li>
+            <li>Built authentication systems</li>
+            <li>API integration and error handling</li>
+            <li>Built full-stack projects</li>
+          </ul>
+        </div>
+
+       
+        <div className="w-full md:w-[500px] border rounded-2xl shadow-2xl bg-[#020617] shadow-blue-950 p-4 hover:scale-105 transition">
+          <h1 className="text-2xl md:text-3xl text-[#38BDF8] font-bold">
+            Education
+          </h1>
+
+          <ul className="list-disc text-sm md:text-xl text-[#94A3B8] pl-5 md:pl-10 space-y-3 mt-4">
+            <li>BCA – IGNOU University (2025)</li>
+          </ul>
+
+          <h1 className="text-xl md:text-2xl text-white font-bold mt-6">
+            Certifications & Training
+          </h1>
+
+          <ul className="list-disc text-sm md:text-xl text-white pl-5 md:pl-10 space-y-3 mt-4">
+            <li>MERN Stack Full Stack Development</li>
+            <li>React & Tailwind Projects</li>
+            <li>Node.js, Express & MongoDB Practice</li>
+          </ul>
+        </div>
+
+      </div>
     </div>
-  )
+  );
 }
 
-export default Aboutme
+export default Aboutme;

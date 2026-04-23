@@ -16,7 +16,6 @@ function Footer() {
       ...formdata,
       [e.target.name]: e.target.value,
     });
-   
   };
 
   const handleSubmit = async (e) => {
@@ -24,81 +23,94 @@ function Footer() {
 
     try {
       const response = await axios.post(
-       "http://localhost:4000/routes/gmail",
+        `${import.meta.env.VITE_BACKEND_URL}/routes/gmail`,
         formdata
       );
 
       alert(response.data.message);
 
-      // optional: clear form after submit
       setformdata({
         mail: "",
         name: "",
         message: "",
       });
-
     } catch (error) {
       console.log(error);
+      alert(error.response?.data?.message || "Something went wrong");
     }
   };
 
   return (
-    <div id="footer" className="flex flex-col h-screen w-full items-center gap-10">
-      <div className="text-5xl tracking-widest font-bold">Lets Connect</div>
+    <div
+      id="footer"
+      className="flex flex-col items-center w-full py-16 px-4 bg-[#020617] gap-10"
+    >
+      {/* TITLE */}
+      <h1 className="text-3xl md:text-5xl font-bold text-white text-center">
+        Let’s Connect
+      </h1>
 
-      <form onSubmit={handleSubmit}>
-        <div className="border h-150 w-170 gap-5 pt-4 flex flex-col rounded-2xl shadow-2xl">
+      {/* FORM */}
+      <form onSubmit={handleSubmit} className="w-full max-w-2xl">
+        <div className="flex flex-col gap-5 bg-[#0F172A] text-slate-200 p-6 md:p-10 rounded-2xl shadow-2xl">
 
-          <div className="text-center">
-            <h1 className="text-xl font-bold tracking-widest">Name</h1>
+          {/* NAME */}
+          <div>
+            <h1 className="text-lg font-bold text-white mb-2">Name</h1>
             <input
               name="name"
               value={formdata.name}
               onChange={showdata}
-              className="h-10 w-150 border pl-4 text-xl rounded-2xl mt-3"
+              className="w-full h-10 md:h-12 border px-4 text-base md:text-lg rounded-xl"
               placeholder="Your Name"
               type="text"
               required
             />
           </div>
 
-          <div className="text-center">
-            <h1 className="text-xl font-bold tracking-widest">Your Email</h1>
+          {/* EMAIL */}
+          <div>
+            <h1 className="text-lg font-bold text-white mb-2">Email</h1>
             <input
               name="mail"
               value={formdata.mail}
               onChange={showdata}
-              className="h-10 w-150 border pl-4 text-xl rounded-2xl mt-3"
+              className="w-full h-10 md:h-12 border px-4 text-base md:text-lg rounded-xl"
               placeholder="Your Email"
               type="email"
               required
             />
           </div>
 
-          <div className="text-center">
-            <h1 className="text-xl font-bold tracking-widest">Message</h1>
-            <input
+          {/* MESSAGE */}
+          <div>
+            <h1 className="text-lg font-bold text-white mb-2">Message</h1>
+            <textarea
               name="message"
               value={formdata.message}
               onChange={showdata}
-              className="h-20 w-150 border pl-4 text-xl rounded-2xl mt-3"
+              className="w-full h-24 border px-4 py-2 text-base md:text-lg rounded-xl"
               placeholder="Your Message"
-              type="text"
               required
             />
           </div>
 
-          <div className="w-full text-center">
-            <button
-              type="submit"
-              className="border h-12 w-140 bg-blue-600 text-white rounded-4xl"
-            >
-              Send Message
-            </button>
-          </div>
-
+          {/* BUTTON */}
+          <button
+            type="submit"
+            className="w-full h-11 md:h-12 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition"
+          >
+            Send Message
+          </button>
         </div>
       </form>
+
+      {/* SOCIAL ICONS */}
+      <div className="flex gap-6 text-3xl text-white">
+        <CiLinkedin className="hover:text-blue-400 cursor-pointer" />
+        <FaSquareXTwitter className="hover:text-blue-400 cursor-pointer" />
+        <FaGithub className="hover:text-blue-400 cursor-pointer" />
+      </div>
     </div>
   );
 }
