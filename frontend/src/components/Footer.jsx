@@ -107,9 +107,9 @@ function Footer() {
 
       {/* SOCIAL ICONS */}
       <div className="flex gap-6 text-3xl text-white">
-        <CiLinkedin className="hover:text-blue-400 cursor-pointer" />
+      <a href="https://www.linkedin.com/in/piyush-rawat-69985b35b">  <CiLinkedin className="hover:text-blue-400 cursor-pointer" /> </a>
         <FaSquareXTwitter className="hover:text-blue-400 cursor-pointer" />
-        <FaGithub className="hover:text-blue-400 cursor-pointer" />
+      <a href="https://github.com/piyushrawatt">  <FaGithub className="hover:text-blue-400 cursor-pointer" /></a>
       </div>
     </div>
   );
