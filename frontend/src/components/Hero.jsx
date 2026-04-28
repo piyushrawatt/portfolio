@@ -41,30 +41,32 @@ function Hero() {
 
       {/* BUTTONS */}
       <div className="flex flex-col md:flex-row gap-4 mt-6">
-        <button className="flex items-center gap-2 h-11 md:h-[45px] w-52 md:w-60 justify-center bg-white rounded-2xl text-violet-950 hover:scale-105 transition">
+     <a href="resume.png" target="">   <button className="flex items-center gap-2 h-11 md:h-[45px] w-52 md:w-60 justify-center bg-white rounded-2xl text-violet-950 hover:scale-105 transition">
           <CiSaveDown2 className="text-2xl" />
           Download Resume
         </button>
+        </a>
 
-        <button className="flex items-center gap-2 h-11 md:h-[45px] w-52 md:w-60 justify-center bg-white rounded-2xl text-violet-950 hover:scale-105 transition">
-          <FaRegMessage className="text-2xl" />
+       <a href="#footer"> <button  className="flex  items-center gap-2 h-11 md:h-[45px] w-52 md:w-60 justify-center bg-white rounded-2xl text-violet-950 hover:scale-105 transition">
+          <FaRegMessage className="text-2xl"  />
           Contact Me
         </button>
+        </a>
       </div>
 
       {/* SOCIAL ICONS */}
       <div className="flex gap-8 mt-6 text-white">
-        <a href="#" target="_blank">
+        <a href="https://www.linkedin.com/in/piyush-rawat-69985b35b" target="_blank">
           <CiLinkedin className="text-3xl md:text-4xl hover:text-blue-500 transition" />
         </a>
 
-        <a href="#" target="_blank">
+        <a href="https://github.com/piyushrawatt" target="_blank">
           <FaGithub className="text-3xl md:text-4xl hover:text-blue-500 transition" />
         </a>
 
-        <a href="#" target="_blank">
+        {/* <a href="#" target="_blank">
           <FaSquareXTwitter className="text-3xl md:text-4xl hover:text-blue-500 transition" />
-        </a>
+        </a> */}
       </div>
     </div>
   );

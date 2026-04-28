@@ -3,9 +3,9 @@ import Featuredproject from './Featuredproject'
 import { FaArrowRight } from "react-icons/fa";
 function Project() {
   return (
-    <div id='project' className='h-screen bg-[#020617] w-full mt gap-20 flex flex-col items-center'>
+    <div id='project' className=' pb-3 md:h-170 bg-[#020617] w-full mt gap-20 flex flex-col items-center'>
         
-     <div className='text-center'>  <h1 className='text-4xl text-slate-50 mt-5 font-bold'>Featured Projects</h1>
+     <div className='text-center'>  <h1 className='text-4xl text-slate-50 mt-5 font-bold p-4'>Featured Projects</h1>
       
         <p className='font-light text-2xl text-gray-600'>Showcasing my best project work and technical expertise</p> </div> 
   <div className='flex  gap-5 md:gap-20'>    <Featuredproject img={"work.jpg"}/>

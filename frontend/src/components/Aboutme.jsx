@@ -9,7 +9,7 @@ function Aboutme() {
   return (
     <div
       id="aboutme"
-      className="flex flex-col items-center bg-[#0F172A] w-full gap-10 pt-10 px-4"
+      className="flex flex-col items-center sm:h-screen bg-[#0F172A] w-full gap-10 pt-10 px-4"
     >
     
       <h1 className="text-3xl md:text-5xl font-bold text-[#38BDF8] text-center">
