@@ -9,6 +9,7 @@ let app = express()
 app.use(cors({
   origin: [
     "http://localhost:5173",
+    "http://localhost:5174",
     "https://myportfolio-iota-one-10.vercel.app"
   ]
 }));
@@ -29,8 +30,8 @@ console.log("db connect sucessfully")
 .catch(()=>{
    console.log(" there is some error")
 })
-let PORT = process.env.PORT|| 8000
-app.listen(PORT,()=>{
-console.log(`server is started ${PORT}`)
+let port = process.env.PORT|| 8000
+app.listen(port,()=>{
+console.log(`server is started ${port}`)
 })
 
