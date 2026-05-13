@@ -32,7 +32,7 @@ function Nav() {
 
           {/* Hamburger */}
           <div
-            className="md:hidden flex flex-col gap-1 cursor-pointe"
+            className="md:hidden flex flex-col gap-1 cursor-pointer"
             onClick={() => setOpen(!open)}
           >
             <span className="w-6 h-0.5 bg-white"></span>

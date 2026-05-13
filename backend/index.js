@@ -23,7 +23,7 @@ console.log("db connect sucessfully")
 .catch(()=>{
    console.log(" there is some error")
 })
-let PORT = process.env.port|| 4000
+let PORT = process.env.PORT|| 8000
 app.listen(PORT,()=>{
 console.log(`server is started ${PORT}`)
 })
