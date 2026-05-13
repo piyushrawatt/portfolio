@@ -6,8 +6,12 @@ import cors from "cors"
 config()
 let app = express()
 app.use(cors({
-   origin: "http://localhost:5173"
-}))
+   origin: [
+      "http://localhost:5173",
+      "https://myportfolio-iota-one-10.vercel.app"
+   ],
+   methods: ["GET", "POST"],
+}));
 
 app.use(express.json())
 app.use("/routes",save)
