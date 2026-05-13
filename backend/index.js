@@ -5,17 +5,19 @@ import save from "./routes/save.js"
 import cors from "cors"
 config()
 let app = express()
-
 app.use(cors({
-   origin:"*"
+   origin: "http://localhost:5173"
 }))
+
 app.use(express.json())
 app.use("/routes",save)
  
 app.get("/",(req,res)=>{
    res.send("backend is running")
 })
-
+app.get("/test", (req,res)=>{
+   res.send("test working")
+})
 mongoose.connect(process.env.MONGO_URI)
 .then(()=>{
 console.log("db connect sucessfully")
