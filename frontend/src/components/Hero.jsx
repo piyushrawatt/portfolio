@@ -41,7 +41,7 @@ function Hero() {
 
       {/* BUTTONS */}
       <div className="flex flex-col md:flex-row gap-4 mt-6">
-     <a href="resume.png" target="">   <button className="flex items-center gap-2 h-11 md:h-[45px] w-52 md:w-60 justify-center bg-white rounded-2xl text-violet-950 hover:scale-105 transition">
+     <a href="Piyush_Rawat_Resume.pdf" target="_blank" download>   <button className="flex items-center gap-2 h-11 md:h-[45px] w-52 md:w-60 justify-center bg-white rounded-2xl text-violet-950 hover:scale-105 transition">
           <CiSaveDown2 className="text-2xl" />
           Download Resume
         </button>
