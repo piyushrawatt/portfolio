@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 
 function Footer() {
   const [formdata, setformdata] = useState({
-    mail: "",
+    email: "",
     name: "",
     message: "",
   });
@@ -31,7 +31,7 @@ function Footer() {
       alert(response.data.message);
 
       setformdata({
-        mail: "",
+        email: "",
         name: "",
         message: "",
       });
@@ -74,7 +74,7 @@ function Footer() {
             <h1 className="text-lg font-bold text-white mb-2">Email</h1>
             <input
               name="mail"
-              value={formdata.mail}
+              value={formdata.email}
               onChange={showdata}
               className="w-full h-10 md:h-12 border px-4 text-base md:text-lg rounded-xl"
               placeholder="Your Email"

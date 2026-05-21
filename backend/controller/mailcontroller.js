@@ -1,30 +1,41 @@
-import sendMail from "../mailer.js";
 import portfoliodata from "../schema/portfolio.js";
+import { Resend } from "resend";
+import { config } from "dotenv";
+config()
+const resend = new Resend(process.env.RESEND_API_KEY);
 
-const mailController = async (req, res) => {
-
+export const sendMessage = async (req, res) => {
   try {
 
-    const to = "okeyyyyess@gmail.com";
+    const { name, email, message } = req.body;
 
-    const { name, mail, message } = req.body;
-
-    const detail = `Name: ${name}\nEmail: ${mail}\nMessage: ${message}`;
-
-    await portfoliodata.create({
+    // Save to MongoDB Atlas
+    const newMessage = await portfoliodata.create({
       name,
-      mail,
-      message
+      email,
+      message,
     });
 
-    await sendMail(
-      to,
-      "Detail of the client",
-      detail
-    );
+    // Send Email
+    await resend.emails.send({
+      from: "onboarding@resend.dev",
+      to: "okeyyyyess@gmail.com",
+      subject: "New Portfolio Contact",
+      html: `
+        <h2>Portfolio Contact</h2>
 
-    res.status(201).json({
-      message: "Successfully sent"
+        <p><strong>Name:</strong> ${name}</p>
+
+        <p><strong>Email:</strong> ${email}</p>
+
+        <p><strong>Message:</strong> ${message}</p>
+      `,
+    });
+
+    res.status(200).json({
+      success: true,
+      message: "Message sent successfully",
+      data: newMessage,
     });
 
   } catch (error) {
@@ -32,10 +43,8 @@ const mailController = async (req, res) => {
     console.log(error);
 
     res.status(500).json({
-      message: "Something went wrong",
-      error: error.message
+      success: false,
+      message: "Server Error",
     });
   }
 };
-
-export default mailController;

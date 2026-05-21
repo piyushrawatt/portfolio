@@ -64,9 +64,7 @@ function Hero() {
           <FaGithub className="text-3xl md:text-4xl hover:text-blue-500 transition" />
         </a>
 
-        {/* <a href="#" target="_blank">
-          <FaSquareXTwitter className="text-3xl md:text-4xl hover:text-blue-500 transition" />
-        </a> */}
+   
       </div>
     </div>
   );
