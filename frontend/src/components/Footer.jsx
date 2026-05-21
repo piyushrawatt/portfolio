@@ -73,7 +73,7 @@ function Footer() {
           <div>
             <h1 className="text-lg font-bold text-white mb-2">Email</h1>
             <input
-              name="mail"
+              name="email"
               value={formdata.email}
               onChange={showdata}
               className="w-full h-10 md:h-12 border px-4 text-base md:text-lg rounded-xl"
