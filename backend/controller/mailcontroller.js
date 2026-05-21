@@ -17,20 +17,22 @@ export const sendMessage = async (req, res) => {
     });
 
     // Send Email
-    await resend.emails.send({
-      from: "onboarding@resend.dev",
-      to: "okeyyyyess@gmail.com",
-      subject: "New Portfolio Contact",
-      html: `
-        <h2>Portfolio Contact</h2>
+const response = await resend.emails.send({
+  from: "onboarding@resend.dev",
+  to: "piyushrawatt018@gmail.com",
+  subject: "New Portfolio Contact",
+  html: `
+    <h2>Portfolio Contact</h2>
 
-        <p><strong>Name:</strong> ${name}</p>
+    <p><strong>Name:</strong> ${name}</p>
 
-        <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Email:</strong> ${email}</p>
 
-        <p><strong>Message:</strong> ${message}</p>
-      `,
-    });
+    <p><strong>Message:</strong> ${message}</p>
+  `,
+});
+
+console.log(response);
 
     res.status(200).json({
       success: true,
