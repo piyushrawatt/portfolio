@@ -17,7 +17,7 @@ const projects = [
     id: 2,
     title: "Portfolio",
     image:"https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900",
-    description: "Track expenses with analytics and beautiful charts.",
+    description: "Showcase my skill ",
     category: "MERN",
     tech: ["React", "Node", "MongoDB"],
     github: "https://github.com/piyushrawatt/portfolio",
@@ -27,7 +27,7 @@ const projects = [
   {
     id: 3,
     title: "E-Commerce",
-    image: "https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=900",
+ image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900",
     description: "Complete shopping platform with Stripe integration.",
     category: "Full Stack",
     tech: ["React", "Express", "MongoDB"],
@@ -45,7 +45,7 @@ const projects = [
     demo: "https://countingweb-g30xzg1dh-piyushrawatts-projects.vercel.app/",
   },
    {
-    id: 4,
+    id: 5,
     title: "todo",
     image:"https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900",
     description: "counting app with increment and decrement feature.",
@@ -55,7 +55,7 @@ const projects = [
     demo: "https://todo-list-65ut9wkwm-piyushrawatts-projects.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Pass-Generator",
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900",
     description: "",
