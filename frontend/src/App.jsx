@@ -1,16 +1,16 @@
+import { Routes, Route } from "react-router-dom";
+import Main from "./components/Main"
+import AllProjects from "./components/Allproject"
+import Footer from "./components/Footer";
 
-
-import Main from "./components/Main.jsx"
 function App() {
-     console.log("hello")
-
   return (
-    
-   <div >
-
-<Main/>
-   </div>
-  )
+    <Routes>
+      <Route path="/" element={<Main/>} />
+      <Route path="/projects" element={<AllProjects />} />
+      <Route path="/contact" element={<Footer/>}/>
+    </Routes>
+  );
 }
 
-export default App
+export default App;

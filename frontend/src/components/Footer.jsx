@@ -10,7 +10,6 @@ function Footer() {
     name: "",
     message: "",
   });
-  console.log(import.meta.env.VITE_BACKEND_URL)
 
   const showdata = (e) => {
     setformdata({

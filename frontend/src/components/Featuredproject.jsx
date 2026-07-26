@@ -1,7 +1,7 @@
 import React from "react";
 import { FaCode } from "react-icons/fa";
 import { TbLivePhoto } from "react-icons/tb";
-
+import { Link } from "react-router-dom";
 function Featuredproject({ img, project, info }) {
   return (
     <div className="group w-full max-w-sm overflow-hidden rounded-3xl shadow-2xl bg-[#0F172A] hover:scale-105 transition duration-300">
