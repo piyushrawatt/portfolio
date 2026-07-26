@@ -2,7 +2,7 @@ import React from "react";
 import { FaCode } from "react-icons/fa";
 import { TbLivePhoto } from "react-icons/tb";
 import { Link } from "react-router-dom";
-function Featuredproject({ img, project, info }) {
+function Featuredproject({ img, project, info ,code ,demo}) {
   return (
     <div className="group w-full max-w-sm overflow-hidden rounded-3xl shadow-2xl bg-[#0F172A] hover:scale-105 transition duration-300">
       
@@ -35,11 +35,11 @@ function Featuredproject({ img, project, info }) {
       {/* BUTTONS */}
       <div className="mt-5 flex flex-col sm:flex-row justify-around text-gray-300 pb-5 text-sm sm:text-base  ml-2">
         <div className="flex items-center gap-2 hover:text-blue-400 cursor-pointer transition">
-          <FaCode /> Code
+        <a href={code}> <FaCode  /> Code </a> 
         </div>
 
         <div className="flex items-center gap-2 hover:text-blue-400 cursor-pointer transition">
-          <TbLivePhoto /> Live Demo
+       <a href={demo}>  <TbLivePhoto /> Live Demo </a> 
         </div>
       </div>
     </div>

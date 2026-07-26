@@ -16,7 +16,7 @@ const projects = [
   {
     id: 2,
     title: "Portfolio",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900",
+    image:"https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900",
     description: "Track expenses with analytics and beautiful charts.",
     category: "MERN",
     tech: ["React", "Node", "MongoDB"],
@@ -37,7 +37,7 @@ const projects = [
     {
     id: 4,
     title: "counting",
-    image: "https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=900",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900",
     description: "counting app with increment and decrement feature.",
     category: "React",
     tech: ["React"],
@@ -47,12 +47,22 @@ const projects = [
    {
     id: 4,
     title: "todo",
-    image: "https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=900",
+    image:"https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900",
     description: "counting app with increment and decrement feature.",
     category: "JavaScript",
     tech: ["JavaScript"],
     github: "https://github.com/piyushrawatt/Todo-List",
     demo: "https://todo-list-65ut9wkwm-piyushrawatts-projects.vercel.app/",
+  },
+  {
+    id: 5,
+    title: "Pass-Generator",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900",
+    description: "",
+    category: "React",
+    tech: ["React"],
+    github: "https://github.com/piyushrawatt/passgenerator",
+    demo: "https://vercel.com/piyushrawatts-projects/passgenerator/deployments",
   },
 ];
 
